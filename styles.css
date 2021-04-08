@@ -44,18 +44,30 @@ ul li a:hover {
     padding: 0.5rem;
 }
 
-@media all and (max-width:768px) {
+@media screen and (max-width:768px) {
     div.nav-bar {
+        display: flex;
+        width: 100%;
         padding: 1rem;
     }
-}
-
-@media all and (max-width:400px) {
-    div.nav-bar {
-        padding: 0.7rem;
+    
+    div.logo {
+        font-size: 1.3rem;
+    }
+    
+    ul.nav-links {
+        flex-direction: column;
+    }
+    
+    ul li {
+        margin: 0;
+        font-size: 1rem;
+    }
+    
+    ul li a {
+        display: block;
     }
 }
-
 
 div.hero-section {
     background: #304353;
@@ -222,9 +234,19 @@ div.box1 h5 {
 }
 
 @media screen and (max-width: 768px) {
-    dov.snapshot-team {
+    div.snapshot-team {
         padding: 2rem;
+        background: #f0f0f0;
+        text-align: center;
         
+    }
+    
+    div.snapshot-team h2 {
+        font-size: 1.1rem;
+    }
+    
+    div.snapshot-team p {
+        font-size: 0.8rem;
     }
     
     div.snapshot-box {
@@ -234,6 +256,15 @@ div.box1 h5 {
     div.snapshot-box-content {
         display: flex;
         flex-direction: column;
+    }
+    div.box1 {
+        width: 300opx;
+        height: 230px;
+    }
+    
+    div.box3 {
+        width: 300opx;
+        height: 230px;
     }
 }
 
